@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from math import fabs  # высчитывание модуля числа
-from itertools import count
 from decimal import Decimal  # для точных расчётов
-from time import gmtime, strftime
 
 
 def num(n):     # вызвращает n-ный член ряда
