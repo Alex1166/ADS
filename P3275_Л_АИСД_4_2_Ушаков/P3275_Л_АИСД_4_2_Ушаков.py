@@ -27,13 +27,13 @@ def ui():
         m = int(input('Введите количество строк: '))        # количество строк
         n = int(input('Введите количество столбцов: '))     # количество столбцов
         inputMatrix = [[randrange(0, 100) for cell in range(n)] for line in range(m)]       # генерация матрицы
-        print('Строк: {0}\nСтолбцов: {1}\n'.format(m, n))
+        print('\nСтрок: {0}\nСтолбцов: {1}\n'.format(m, n))
         print('Исходная матрица:')
         show_matrix(inputMatrix)
-        print('\nПреобразованная матрица:')
+        print('\nПреобразованная матрица (столбцы отсортированы по возрастанию):')
         show_matrix(convert_matrix(inputMatrix, m))
     except ValueError:
-        print('Необходимо ввести целое число')
+        print('Ошибка! Необходимо ввести целое число')
         ui()
 
 
